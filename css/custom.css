@@ -1,0 +1,15 @@
+/* Variables */
+:root {
+    --dark-col: #8B0000;
+    --light-col: #FCF9DB;
+    --active-col: #407C51;
+    --hoover-col: #BA3030;
+    --dark-text: #000000;
+    --light-text: #FCF9DB;
+}
+
+/* Main */
+
+.jumbotron {
+  background-image: url(file:///C:/Users/adria/Documents/Projekty/WebDev/website2/css/img/hero-bck.jpg); 
+}
