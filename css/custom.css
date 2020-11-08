@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-    --dark-col: #8B0000;
+    --dark-col: #615048;
     --light-col: #FCF9DB;
-    --active-col: #407C51;
-    --hoover-col: #BA3030;
+    --active-col: #2AD800;
+    --hoover-col: #4C403B;
     --dark-text: #000000;
     --light-text: #FCF9DB;
 }
@@ -11,5 +11,11 @@
 /* Main */
 
 .jumbotron {
-  background-image: url(file:///C:/Users/adria/Documents/Projekty/WebDev/website2/css/img/hero-bck.jpg); 
+  background-image: url("https://raw.githubusercontent.com/AdiUdo/website2/master/img/hero-bck.jpg");
+  min-height: 500px;
+}
+
+.hero-container {
+     background-color: white;
+     bottom: 0px;
 }
