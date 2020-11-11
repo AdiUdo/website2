@@ -11,11 +11,47 @@
 /* Main */
 
 .jumbotron {
+  color: white;
   background-image: url("https://raw.githubusercontent.com/AdiUdo/website2/master/img/hero-bck.jpg");
-  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
 }
 
 .hero-container {
      background-color: white;
      bottom: 0px;
+}
+
+
+/* Tabs */
+
+#custom .nav-tabs {
+  border-bottom: 0;
+}
+
+#custom .nav-tabs .nav-link {
+  border-color: white;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+#custom .nav-link.active {
+  border-top: rgb(75, 75, 75) solid 2px;
+}
+
+#custom .card-title {
+  display: inline-block;
+}
+
+#custom .list-unstyled {
+  list-style: outside;
+}
+
+/* Cards*/
+
+#custom .card {
+  border: 0;
 }
