@@ -20,10 +20,12 @@
 }
 
 .hero-container {
-     background-color: white;
      bottom: 0px;
 }
 
+#custom .nav {
+  min-width: 60%;
+}
 
 /* Tabs */
 
@@ -40,6 +42,7 @@
 
 #custom .nav-link.active {
   border-top: rgb(75, 75, 75) solid 2px;
+  border-radius: 50rem;
 }
 
 #custom .card-title {
@@ -54,4 +57,11 @@
 
 #custom .card {
   border: 0;
+}
+
+
+img#logo {
+  position: absolute;
+  display: unset;
+  width: 100px;
 }
