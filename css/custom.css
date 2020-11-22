@@ -10,13 +10,16 @@
 
 /* Main */
 
+body {
+  position: relative;
+}
+
 .jumbotron {
   color: white;
   background-image: url("https://raw.githubusercontent.com/AdiUdo/website2/master/img/hero-bck.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
 }
 
 .hero-container {
@@ -53,16 +56,64 @@
   list-style: outside;
 }
 
+#custom .tab-content {
+  min-height: 800px;
+}
+
 /* Cards*/
 
 #custom .card {
   border: 0;
 }
 
-
-img#logo {
-  position: absolute;
-  display: unset;
-  width: 100px;
+#custom img.card-img-top {
+  width: 100%;
+  height: 18vh;
+  object-fit: cover;
+  object-position: left;
 }
 
+#avatar {
+  max-height: 150px;
+}
+
+
+/* Stripes */
+
+
+/* Carousel */
+
+#custom .carousel-caption {
+  bottom: -253px;
+  color: black;
+}
+
+
+
+/* Media queries */
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ #custom .jumbotron {
+   height: 100%;
+ }
+ #custom h1.display-4 {
+   font-size: calc(1rem + 2.7vw);
+ } 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  #custom .jumbotron {
+    min-height: 60vh;
+  } 
+ }
