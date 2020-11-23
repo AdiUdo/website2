@@ -30,6 +30,13 @@ body {
   min-width: 60%;
 }
 
+div#moto {
+  display: block;
+  top: -110px;
+  background: white;
+  color: black;
+}
+
 /* Tabs */
 
 #custom .nav-tabs {
@@ -117,3 +124,5 @@ body {
     min-height: 60vh;
   } 
  }
+
+/* Este upravit */
