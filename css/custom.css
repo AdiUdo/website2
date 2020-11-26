@@ -30,13 +30,6 @@ body {
   min-width: 60%;
 }
 
-div#moto {
-  display: block;
-  top: -110px;
-  background: white;
-  color: black;
-}
-
 /* Tabs */
 
 #custom .nav-tabs {
@@ -123,8 +116,12 @@ div#moto {
   #custom .jumbotron {
     min-height: 60vh;
   } 
+<<<<<<< HEAD
  }
 
 
 
 
+=======
+ }
+>>>>>>> parent of cc22a1a... Uprava layout, zmena tabov, motto
