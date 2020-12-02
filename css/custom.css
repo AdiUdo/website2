@@ -77,16 +77,20 @@ body {
   max-height: 150px;
 }
 
-
-/* Stripes */
-
-
-/* Carousel */
-
-#custom .carousel-caption {
-  bottom: -253px;
-  color: black;
+/* Media box */
+#custom .media {
+  height: 80px;
 }
+
+/* Slices */
+section.slice {
+  margin: 110px 0px;
+}
+
+.headline {
+  text-align: center!important;
+}
+/* Carousel */
 
 
 
@@ -116,12 +120,8 @@ body {
   #custom .jumbotron {
     min-height: 60vh;
   } 
-<<<<<<< HEAD
  }
 
 
 
 
-=======
- }
->>>>>>> parent of cc22a1a... Uprava layout, zmena tabov, motto
