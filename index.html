@@ -35,12 +35,12 @@
 
 
   <!-- Hero sekcia -->
-  <div class="jumbotron jumbotron-fluid position-relative">
+  <div id="o-nas" class="jumbotron jumbotron-fluid position-relative">
 
     <!-- Nav -->
-    <nav id="navbar-scroll" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar-scroll" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <img id="logo" src="img/logo.svg" width="70" class="d-inline-block align-top" alt="" loading="lazy">
+        <img id="logo" src="img//logo-background.png" width="70" class="d-inline-block align-top" alt="" loading="lazy">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,16 +48,16 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="nav nav-pills nav-fill ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#o-nas">O nás</a>
+              <a class="nav-link text-white active" href="#o-nas">O nás</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sluzby">Služby</a>
+              <a class="nav-link text-white" href="#sluzby">Služby</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#referencie">Referencie</a>
+              <a class="nav-link text-white" href="#referencie">Referencie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontakt">Kontakt</a>
+              <a class="nav-link text-white" href="#kontakt">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -81,7 +81,7 @@
   </div>
 
   <!-- O nas sekcia -->
-  <section class="slice">
+  <section class="slice mb-5">
     <div class="container">
     <div id="o-nas" class="row py-6">
       <div class="row justify-content-center">
@@ -116,18 +116,18 @@
 </section>
 
   <!--Sec-Sluzby-->
-  <section class="slice">
+  <section id="sluzby" class="slice mb-5">
     <div class="container">
       <div class="row">
   
         <div class="col-12">
-          <h2 class="headline">Služby</h2>
+          <h2 class="headline font-weight-bolder my-4 my-md-5">Služby</h2>
         </div>
   
       </div>
       <div class="row">
   
-        <div class="col-12 card-deck pt-5">
+        <div class="col-12 card-deck">
           <div class="row justify-content-center">
             <div class="card shadow-lg col-10 col-md-10">
               <div class="card-body">
@@ -172,11 +172,11 @@
   </section>
 
   <!--Sec-Postup vyskumu-->
-  <section class="slice">
+  <section id="referencie" class="slice mb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="headline">Postup vyskumu</h2>
+          <h2 class="headline font-weight-bolder my-4 my-md-5">Postup výskumu</h2>
         </div>
       </div>
       <div class="row">
@@ -186,52 +186,44 @@
           </div>
         </div>
       </div>
-      <div class="row pt-5">
-        <div class="col-12">
-          <p>Po ukončení genealogického výskumu objednávateľ obdrží kvalifikovanú písomnú správu vo formáte pdf alebo
+    </div>
+      
+  <!--Sec-Vysledky vyskumu-->
+  <div class="container py-5 position-relative zindex-100">
+    <div class="row row-grid justify-content-around align-items-center">
+      <div class="col-lg-5">
+        <div class="text-center text-lg-left">
+         <h2 class=" mt-4 mb-3">Výsledky výskumu</h1>
+          <p class="lh-180 ">Po ukončení genealogického výskumu objednávateľ obdrží kvalifikovanú písomnú správu vo formáte pdf alebo
             knižky. Súčasťou správy sú skeny všetkých zistených matričných záznamov resp. iných relevantných dokumentov
             a genealogické tabuľky. Hĺbka výskumu je vždy limitovaná dostupnosťou zdrojov. Závery správy sa opierajú
-            explicitne o jednoznačné a nevyvrátiteľné fakty. </p>
+            explicitne o jednoznačné a nevyvrátiteľné fakty.</p>
+          <div class="mt-6">
+            <a href="#" class="btn btn-primary btn-icon rounded-pill hover-translate-y-n3">
+              <span class="btn-inner--icon"><i class="fas fa-fire"></i></span>
+              <span class="btn-inner--text">Kontaktujte nás</span>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Logo</h5>
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="card card-3d bg-section-secondary mt-1 mb-0 py-5 px-4 shadow-lg perspective-right hover-scale-110">
+          <img src="./img/vysledok-diagram-2.jpg" class="card-img" alt="...">       
+            <div class="card-img-overlay">
               <p class="card-text">Vzor grafického znázornenia rodového vývodu pomocou softwaru – personalizovaný formát</p>
             </div>
-            <img src="./img/vysledok-diagram-2.jpg" class="card-img-bottom" alt="...">
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Logo</h5>
-              <p class="card-text">Vzor grafického znázornenia rodového vývodu pomocou počítačovej grafiky – 5 generácií, spolu  30 predkov. Možnosť tlače na papier, plátno</p>
-            </div>
-            <img src="./img/vysledok-diagram-1.jpg" class="card-img-bottom" alt="...">
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Logo</h5>
-              <p class="card-text">Originálny ručne maľovaný rodostrom na základe individuálnej požiadavky, bude pripravený na základe návrhu grafika</p>
-            </div>
-            <img src="./img/vysledok-diagram-4.jpeg" class="card-img-bottom" alt="...">
-          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!--Sec-Kontakt-->
-<section class="slice">
+<section id="kontakt" class="slice mb-5">
   <div class="container">
     <div class="row">
       <div class="col-12">
-      <h2 class="headline">Kontakt</h2>
+      <h2 class="headline font-weight-bolder my-4 my-md-5">Kontakt</h2>
     </div>
     </div>
     <div class="row">
@@ -264,11 +256,11 @@
 
 
   <!-- Referencie -->
-<section class="slice">
+<section class="slice mb-5">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="headline">Referencie</h2>
+        <h2 class="headline font-weight-bolder my-4 my-md-5">Referencie</h2>
       </div>
     </div>
     <div class="row" style="height: 500px;">
