@@ -62,13 +62,9 @@ body {
 
 .card-3d {
   width: 650px;
-  height: 450px;
+  height: 470px;
 }
-img.card-img {
-  width: 100%;
-  position: absolute;
-  top:20%;
-}
+
 
 #avatar {
   max-height: 150px;
@@ -90,6 +86,15 @@ img.card-img {
 
 
 /* Media queries */
+
+/* Custom class */
+.kodex {
+  font-size: .8em;
+}
+
+.media img {
+  width: 75px;
+}
 
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
