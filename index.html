@@ -293,61 +293,51 @@
         <h2 class="headline font-weight-bolder my-4 my-md-5">Referencie</h2>
       </div>
     </div>
-    <div class="row" style="height: 500px;">
-      <div class="col-12">
-
-        <div id="#carouselinterface" class="carousel slide" data-pause="true" data-keyboard="false"
-        data-ride="carousel" data-interval="8000" >
-
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active">
-
-            <div class="carousel-caption d-none d-md-block">
-              <p class="">
-                „I’m very happy to go ahead. Thank you so much for your assist me.“
-              </p>
-              <p class="">Christine F., Australia, 2020</p>
+    <section id="referencie-slider" class="slice slice-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="swiper-container">
+              <div class="swiper-container swiper-container-initialized swiper-container-horizontal" data-swiper-items="1" data-swiper-space-between="0" style="cursor: grab;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-active" style="width: 825px;">
+                    <div class="text-center">
+                      <p class="h2 lh-160 text-gray font-italic font-weight-300">„I’m very happy to go ahead. Thank you so much for your assist me.“</p>
+                      <div class="text-center mt-4">
+                        <h3 class="h5">Christine F., Australia, 2020</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-next" style="width: 825px;">
+                    <div class="text-center">
+                      <p class="h4 lh-160 text-gray font-italic font-weight-300" >“Hálás köszönettel tartozom Klárának, aki nemcsak megosztotta velem becses kutatási eredményeit, forrásait, de még egy távoli rokonommal is segített felvenni a kapcsolatot. Őszintén örülök, hogy léteznek még ennyire kedves és segítőkész emberek.”</p>
+                      <div class="text-center mt-4">
+                        <h3 class="h5">Karina Kerekes, London, UK, 2020</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 825px;">
+                    <div class="text-center">
+                      <p class="h5 lh-160 text-gray font-italic font-weight-300" >„I cooperated with Klara Veres on researching our mutual ancestors in our family trees over several years. She helped me greatly in locating the death records of my great grandparents as well as resolving the complicated issue of identifying the right relations when several persons of the same name were listed in the records. She is a very skillful researcher and is very good at finding and investigating birth death and marriage records and other sources of information in Slovakia and Hungary. I can highly recommend her services for any prospective ancestry researcher in Slovakia and Hungary..“</p>
+                      <div class="text-center mt-4">
+                        <h3 class="h5">MJT, Australia, 2020</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination w-100 pt-5 d-flex align-items-center justify-content-center swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
             </div>
-
-          </div>
-          <div class="carousel-item">
-
-            <div class="carousel-caption d-none d-md-block">
-              <p class="">
-                “Hálás köszönettel tartozom Klárának, aki nemcsak megosztotta velem becses kutatási eredményeit,
-                forrásait, de még egy távoli rokonommal is segített felvenni a kapcsolatot. Őszintén örülök, hogy
-                léteznek még ennyire kedves és segítőkész emberek.”
-              </p>
-              <p class="">— Karina Kerekes, London, UK, 2020</p>
-            </div>
-
-          </div>
-          <div class="carousel-item">
-
-            <div class="carousel-caption d-none d-md-block">
-              <p class="">
-                „I cooperated with Klara Veres on researching our mutual ancestors in our family trees over several
-                years. She helped me greatly in locating the death records of my great grandparents as well as
-                resolving the complicated issue of identifying the right
-                relations when several persons of the same name were listed in the records. She is a very skillful
-                researcher and is very good at finding and investigating birth death and marriage records and other
-                sources of information in Slovakia and Hungary.
-                I can highly recommend her services for any prospective ancestry researcher in Slovakia and Hungary..“
-              </p>
-              <p class="">— MJT, Australia, 2020</p>
-            </div>
-
           </div>
         </div>
-      </div>  
       </div>
+    </section>
+
     </div>
-    
-      
-    </div>
-  
+
 </section>
-  
+
 
   <!-- Footer -->
 
@@ -515,24 +505,25 @@
   </script>
 
 <!--Swiper activation-->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-</script>
+
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
 
 
 </body>
