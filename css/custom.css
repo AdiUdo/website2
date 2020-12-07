@@ -56,15 +56,6 @@ body {
   z-index: 100 !important;
 }
 
-.perspective-right {
-  transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
-}
-
-.card-3d {
-  width: 650px;
-  height: 470px;
-}
-
 
 #avatar {
   max-height: 150px;
