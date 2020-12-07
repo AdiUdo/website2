@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="css/grid.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
     rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 
@@ -102,7 +104,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <div class="swiper-js-container">
+            <div class="swiper-container">
               <div class="swiper-container swiper-container-initialized swiper-container-horizontal" data-swiper-items="1" data-swiper-space-between="0" style="cursor: grab;">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide swiper-slide-active" style="width: 825px;">
@@ -144,11 +146,91 @@
   </div>
 
 
+
+  <div class="col-xl-8">
+    <div class="swiper-container swiper-container-initialized swiper-container-horizontal" data-swiper-items="1" data-swiper-space-between="0" data-swiper-sm-items="2" style="cursor: grab;">
+      <div class="swiper-wrapper" style="transform: translate3d(-333.5px, 0px, 0px); transition-duration: 0ms;">
+        <div class="swiper-slide p-4 swiper-slide-prev" style="width: 333.5px;">
+          <!-- Testimonial entry 1 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img alt="Image placeholder" src="assets/img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
+                </div>
+                <div class="pl-3">
+                  <h5 class="h6 mb-0">Heather Wright</h5>
+                  <small class="d-block text-muted">Google</small>
+                </div>
+              </div>
+              <p class="mt-4 lh-180">Amazing template! All-in-one, clean code, beautiful design, and really not hard to work with.Highly recommended for any kind on website.</p>
+              <span class="static-rating static-rating-sm">
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-4 swiper-slide-active" style="width: 333.5px;">
+          <!-- Testimonial entry 2 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img alt="Image placeholder" src="assets/img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
+                </div>
+                <div class="pl-3">
+                  <h5 class="h6 mb-0">Monroe Parker</h5>
+                  <small class="d-block text-muted">Apple</small>
+                </div>
+              </div>
+              <p class="mt-4 lh-180">Amazing template! All-in-one, clean code, beautiful design, and really not hard to work with.Highly recommended for any kind on website.</p>
+              <span class="static-rating static-rating-sm">
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide p-4 swiper-slide-next" style="width: 333.5px;">
+          <!-- Testimonial entry 3 -->
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img alt="Image placeholder" src="assets/img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
+                </div>
+                <div class="pl-3">
+                  <h5 class="h6 mb-0">John Sullivan</h5>
+                  <small class="d-block text-muted">Amazon</small>
+                </div>
+              </div>
+              <p class="mt-4 lh-180">Amazing template! All-in-one, clean code, beautiful design, and really not hard to work with.Highly recommended for any kind on website.</p>
+              <span class="static-rating static-rating-sm">
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+                <i class="star fas fa-star voted"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination w-100 pt-4 d-flex align-items-center justify-content-center swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+  </div>
+
+
+
  
-
-
-
-
 
 
 
@@ -160,6 +242,27 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
   <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
