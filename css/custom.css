@@ -56,6 +56,21 @@ body {
   z-index: 100 !important;
 }
 
+#vysledky .card {
+  padding: 15px;
+  width: 620px;
+  height: 495px;
+}
+
+#vysledky img {
+  position: relative;
+  top: 70px;
+}
+
+#vysledky .card-text {
+  font-size: 1.1em;
+  font-variant: all-petite-caps;
+}
 
 #avatar {
   max-height: 150px;
@@ -83,6 +98,10 @@ body {
   background: #fff;
 }
 
+.swiper-vysledky {
+  width: 730px;
+  height: 600px;
+}
 
 /* Media queries */
 
@@ -93,6 +112,12 @@ body {
 
 .media img {
   width: 75px;
+}
+
+/* Referencie */
+.text-testimonial-main {
+  font-style: italic;
+  font-weight: lighter;
 }
 
 /*  Extra small devices (portrait phones, less than 576px) */
