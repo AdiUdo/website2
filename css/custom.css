@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --dark-col: #615048;
+    --dark-col: #615048; /*A19284,89685c*/
     --light-col: #FCF9DB;
     --active-col: #2AD800;
     --hoover-col: #4C403B;
@@ -9,6 +9,14 @@
 }
 
 /* Main */
+.bg-section {
+  background-color: var(--dark-col);
+}
+.card-header {
+  color: white;
+  background-color: var(--dark-col);
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -21,6 +29,8 @@ body {
 .jumbotron {
   color: white;
   background-image: url("https://raw.githubusercontent.com/AdiUdo/website2/master/img/hero-bck.jpg");
+  background-blend-mode: multiply;
+  background-color: #666666;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,13 +109,14 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /*background: #fff;*/
 }
 
 .swiper-vysledky {
   width: 730px;
   height: 600px;
 }
+
 
 /* Media queries */
 
