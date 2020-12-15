@@ -50,6 +50,10 @@ body {
   border-radius: 50rem;
 }
 
+#footer .nav-link {
+  padding-left: 0;
+}
+
 /* Tabs */
 
 
@@ -84,6 +88,11 @@ body {
 #vysledky .card-text {
   font-size: 1.1em;
   font-variant: all-petite-caps;
+}
+
+#postup .card-body {
+  border-top:var(--active-col) solid 4px;
+
 }
 
 #avatar {
@@ -134,6 +143,9 @@ body {
   font-style: italic;
   font-weight: lighter;
 }
+
+/* Footer*/
+
 
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
