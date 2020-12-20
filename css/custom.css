@@ -37,17 +37,52 @@ body {
 }
 
 .hero-container {
-     bottom: 0px;
+  bottom: 0px;
 }
+
+
+/* Navbar */
 
 #custom .nav {
   min-width: 60%;
 }
 
-/* Navbar */
+#navbar-scroll .nav-link {
+  color: white;
+}
 
-#custom .nav-link.active {
-  border-radius: 50rem;
+#navbar-scroll .nav-link.active {
+  color: var(--active-col);
+}
+
+#navbar-scroll .nav-link.active::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: var(--active-col);
+  position: absolute;
+  top: -13px;
+  width: 75%;
+}
+
+#navbar-scroll .nav-item {
+  position: relative;
+  color: white;
+}
+
+#navbar-scroll .nav-link::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: var(--active-col);
+  position: absolute;
+  top: -13px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+#navbar-scroll .nav-link:hover::before {
+  width: 75%;
 }
 
 #footer .nav-link {
