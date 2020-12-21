@@ -55,35 +55,11 @@ body {
   color: var(--active-col);
 }
 
-#navbar-scroll .nav-link.active::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: var(--active-col);
-  position: absolute;
-  top: -13px;
-  width: 75%;
-}
-
 #navbar-scroll .nav-item {
   position: relative;
   color: white;
 }
 
-#navbar-scroll .nav-link::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: var(--active-col);
-  position: absolute;
-  top: -13px;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
-
-#navbar-scroll .nav-link:hover::before {
-  width: 75%;
-}
 
 #footer .nav-link {
   padding-left: 0;
@@ -93,6 +69,15 @@ body {
 
 
 /* Cards*/
+
+h5.card-title {
+  font-weight: 700;
+  color: #21A801;
+}
+
+#sluzby .card {
+  border-width: 5px!important;
+}
 
 #custom .card {
   border: 0;
@@ -161,6 +146,9 @@ body {
   height: 600px;
 }
 
+.swiper-pagination-bullet {
+  background-color: var(--active-col)!important;
+}
 
 /* Media queries */
 
@@ -182,24 +170,76 @@ body {
 /* Footer*/
 
 
+
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
  #custom .jumbotron {
-   height: 100%;
+   height: 40vh;
  }
  #custom h1.display-4 {
    font-size: calc(1rem + 2.7vw);
- } 
+ }
+#navbar-scroll .nav-link {
+  font-size: 50px;
+  font-weight: 700;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  #navbar-scroll .nav-link {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  #custom .jumbotron {
+    height: 40vh;
+  }
+  #footer p {
+    margin-bottom: 0.1rem!important;
+  }
+  #footer a {
+    padding: 0.1rem 0.1rem;
+  }
+  #footer hr {
+    margin: 0.1rem 0.1rem;
+  }
+ }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #custom .jumbotron {
+    height: 40vh;
+  } 
+ }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px)  { 
+  #navbar-scroll .nav-link.active::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--active-col);
+    position: absolute;
+    top: -13px;
+    width: 75%;
+  }
+  
+  #navbar-scroll .nav-link::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: var(--active-col);
+    position: absolute;
+    top: -13px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  #navbar-scroll .nav-link:hover::before {
+    width: 75%;
+  }
+ }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
