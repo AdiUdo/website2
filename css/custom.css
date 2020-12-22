@@ -142,8 +142,11 @@ h5.card-title {
 }
 
 .swiper-vysledky {
+  position:absolute;
   width: 730px;
   height: 600px;
+  top: 250px;
+  left: 50px;
 }
 
 .swiper-pagination-bullet {
@@ -174,7 +177,7 @@ h5.card-title {
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
  #custom .jumbotron {
-   height: 40vh;
+   height: 60vh;
  }
  #custom h1.display-4 {
    font-size: calc(1rem + 2.7vw);
@@ -182,6 +185,31 @@ h5.card-title {
 #navbar-scroll .nav-link {
   font-size: 50px;
   font-weight: 700;
+}
+.swiper-vysledky {
+  position:relative;
+  width: 345px;
+  height: 345px;
+  top:0px;
+  left:0px;
+}
+#vysledky .card {
+  padding: 10px;
+  width: 320px;
+  height: 340px;
+}
+
+#vysledky img {
+  position: relative;
+  top: 70px;
+}
+
+#vysledky .card-text {
+  font-size: 0.7em;
+  font-variant: all-petite-caps;
+}
+#vysledky .card-img-overlay {
+  padding: 0.5rem;
 }
 }
 
@@ -192,7 +220,7 @@ h5.card-title {
     font-weight: 700;
   }
   #custom .jumbotron {
-    height: 40vh;
+    height: 60vh;
   }
   #footer p {
     margin-bottom: 0.1rem!important;
@@ -208,7 +236,7 @@ h5.card-title {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #custom .jumbotron {
-    height: 40vh;
+    height: 60vh;
   } 
  }
 
@@ -232,7 +260,7 @@ h5.card-title {
     position: absolute;
     top: -13px;
     width: 0%;
-    transition: all ease-in-out 250ms;
+    transition: all linear 250ms;
   }
   
   #navbar-scroll .nav-link:hover::before {
