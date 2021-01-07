@@ -274,6 +274,9 @@ h5.card-title {
   #custom .jumbotron {
     min-height: 60vh;
   } 
+  #ethics .jumbotron {
+    min-height: 30vh;
+  } 
  }
 
 
