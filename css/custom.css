@@ -176,7 +176,7 @@ h5.card-title {
 
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
- #custom .jumbotron {
+ #custom .height-high {
    height: 60vh;
  }
  #custom h1.display-4 {
@@ -271,14 +271,10 @@ h5.card-title {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  #custom .jumbotron {
+  #custom .height-high {
     min-height: 60vh;
-  } 
-  #ethics .jumbotron {
-    min-height: 30vh;
-  } 
  }
-
+}
 
 
 

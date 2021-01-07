@@ -32,8 +32,7 @@
 </head>
 
 <body id="custom" data-spy="scroll" data-target=".navbar" data-offset="80">
-  <!-- Hero sekcia -->
-  <div id="o-nas" class="jumbotron jumbotron-fluid position-relative">
+
     <!-- Nav -->
     <nav id="navbar-scroll" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
       <div class="container">
@@ -59,7 +58,11 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>  
+    <!-- Hero sekcia -->
+
+  <div id="o-nas" class="jumbotron jumbotron-fluid position-relative height-high">
+
     <div class="position-relative py-5">
       <div class="container">
         <h1 class="display-4 text-center font-weight-bolder m-5 m-lg-7">Genealogický výskum</h1>
@@ -610,10 +613,8 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script>
     $(document).on('click', 'a.nav-link', function (event) {
-      event.preventDefault();
-      console.log("CLICKED ANCHOR!");
-
-      $('html, body').animate({
+  
+        $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar.fixed-top").height()
       }, 500);
     });
