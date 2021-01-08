@@ -94,18 +94,18 @@ h5.card-title {
   z-index: 100 !important;
 }
 
-#vysledky .card {
+#vzory .card {
   padding: 15px;
   width: 620px;
   height: 495px;
 }
 
-#vysledky img {
+#vzory img {
   position: relative;
   top: 70px;
 }
 
-#vysledky .card-text {
+#vzory .card-text {
   font-size: 1.1em;
   font-variant: all-petite-caps;
 }
@@ -145,12 +145,16 @@ h5.card-title {
   position:absolute;
   width: 730px;
   height: 600px;
-  top: 250px;
-  left: 50px;
+  top: -330px;
+  right: -400px;
 }
 
 .swiper-pagination-bullet {
   background-color: var(--active-col)!important;
+}
+
+#vzory .row {
+  max-height: 15px;
 }
 
 /* Media queries */
@@ -193,23 +197,26 @@ h5.card-title {
   top:0px;
   left:0px;
 }
-#vysledky .card {
+#vzory .card {
   padding: 10px;
   width: 320px;
   height: 340px;
 }
 
-#vysledky img {
+#vzory img {
   position: relative;
   top: 70px;
 }
 
-#vysledky .card-text {
+#vzory .card-text {
   font-size: 0.7em;
   font-variant: all-petite-caps;
 }
-#vysledky .card-img-overlay {
+#vzory .card-img-overlay {
   padding: 0.5rem;
+}
+#vzory .row {
+  max-height: 175px;
 }
 }
 
@@ -231,12 +238,68 @@ h5.card-title {
   #footer hr {
     margin: 0.1rem 0.1rem;
   }
+  .swiper-vysledky {
+    position:relative;
+    width: 345px;
+    height: 345px;
+    top:0px;
+    left:0px;
+  }
+  #vzory .card {
+    padding: 10px;
+    width: 320px;
+    height: 340px;
+  }
+  
+  #vzory img {
+    position: relative;
+    top: 70px;
+  }
+  
+  #vzory .card-text {
+    font-size: 0.7em;
+    font-variant: all-petite-caps;
+  }
+  #vzory .card-img-overlay {
+    padding: 0.5rem;
+  }
+  #vzory .row {
+    max-height: 175px;
+  }
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #custom .jumbotron {
     height: 60vh;
+  }
+  .swiper-vysledky {
+    position:relative;
+    width: 545px;
+    height: 545px;
+    top:0px;
+    left:0px;
+  }
+  #vzory .card {
+    padding: 10px;
+    width: 520px;
+    height: 540px;
+  }
+  
+  #vzory img {
+    position: relative;
+    top: 70px;
+  }
+  
+  #vzory .card-text {
+    font-size: 0.7em;
+    font-variant: all-petite-caps;
+  }
+  #vzory .card-img-overlay {
+    padding: 0.5rem;
+  }
+  #vzory .row {
+    max-height: 625px;
   } 
  }
 

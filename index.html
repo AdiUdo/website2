@@ -203,12 +203,10 @@
           <h2 class="headline font-weight-bolder my-4 my-md-5">Postup výskumu</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div id="blocksteps" class="card-deck">
+      <div class="row ">
+          <div id="blocksteps" class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
             <!--Pars-data-steps-->
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -220,8 +218,8 @@
       </div>
     </div>
     <div class="container position-relative zindex-100 pb-5">
-      <div class="row justify-content-left align-items-left">
-        <div class="col-10 col-lg-5">
+      <div class="row">
+        <div class="col-12 col-lg-5">
           <div class="text-center text-lg-left">
             <p class="lh-180 text-light">Po ukončení genealogického výskumu objednávateľ obdrží kvalifikovanú písomnú
               správu vo formáte pdf alebo knižky. Súčasťou správy sú skeny všetkých zistených matričných záznamov resp. iných relevantných dokumentov a genealogické tabuľky. Hĺbka výskumu je vždy limitovaná dostupnosťou zdrojov. Závery správy sa opierajú explicitne o jednoznačné a nevyvrátiteľné fakty.</p>
@@ -235,9 +233,10 @@
       </div> <!-- End of row-->
     </div>
   </section>
-  <section>
+  <!-- Sec-Vzory-->
+  <section id="vzory">
     <div class="row">
-      <div class="col-12 col-lg-5 d-lg-block">
+      <div class="col-12 col-lg-12 d-lg-block">
         <div class="position-relative">
 
           <!-- Swiper -->
@@ -530,13 +529,16 @@
       let menulang = stepitem.lang;
       if (menulang == "sk") {
         return `
-          <div class="card text-center shadow-lg">
+        <div classs="col">  
+          <div class="card text-center shadow-lg m-4 ">
             <div class="card-header">${stepitem.head}</div>
-            <div class="card-body ">
-              <h5 class="card-title text-primary">${stepitem.title}</h5>
-              <p class="card-text">${stepitem.text}</p>
+              <div class="card-body ">
+                <h5 class="card-title text-primary">${stepitem.title}</h5>
+                <p class="card-text">${stepitem.text}</p>
+              </div>
             </div>
           </div>
+        </div>
         `
       } else {
         return ''
