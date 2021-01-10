@@ -46,8 +46,8 @@
             <li class="nav-item">
               <a class="nav-link active" href="#o-nas">O nás</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sluzby">Služby</a>
+            <li class="nav-item" data-toggle="collapse">
+              <a class="nav-link" href="#sluzby" >Služby</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#referencie">Referencie</a>
@@ -613,11 +613,17 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script>
     $(document).on('click', 'a.nav-link', function (event) {
-  
+
         $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - $(".navbar.fixed-top").height()
       }, 500);
     });
+
+  $("#navbarNav").on('show.bs.collapse', function() {
+    $('a.nav-link').click(function() {
+        $("#navbarNav").collapse('hide');
+    });
+});
   </script>
 
 </body>
