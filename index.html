@@ -69,7 +69,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" role="navigation">
-          <ul class="nav nav-fill ml-auto d-block d-md-flex">
+          <ul class="nav nav-fill ml-auto d-block d-md-flex font-weight-bold">
             <li class="nav-item">
               <a class="nav-link active" href="#o-nas">O nás</a>
             </li>
@@ -139,6 +139,8 @@
               Či už natravíte na vznešenú alebo menej šťastnú minulosť Vašich
               predkov, patrí im hold za ich životnú cestu – o tom je práve aj
               naše občianske združenie PROAVITUS (lat. vzdávanie úcty predkom).
+              <br>
+              V prípade, ak potrebujete pomôcť pri bádání alebo máte záujem o komplexné genealogické služby, ponúkame Vám našu pomoc.
             </p>
           </div>
         </div>
@@ -224,8 +226,8 @@
         </div>
         <div class="row">
           <div class="row row-cols-1 row-cols-lg-4 justify-content-center px-4">
-            <div class="col">
-              <div class="card shadow-lg border-bottom border-primary mb-4">
+            <div class="col mb-4">
+              <div class="card shadow-lg border-bottom border-primary mb-4 text-center h-100">
                 <div class="card-body">
                   <h5 class="card-title"><span>Rodový vývod</span></h5>
                   <p class="card-text">
@@ -235,8 +237,8 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-lg border-bottom border-primary mb-4">
+            <div class="col mb-4">
+              <div class="card shadow-lg border-bottom border-primary mb-4 text-center h-100">
                 <div class="card-body">
                   <h5 class="card-title"><span>Rodokmeň</span></h5>
                   <p class="card-text">
@@ -246,13 +248,13 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-lg border-bottom border-primary">
+            <div class="col mb-4">
+              <div class="card shadow-lg border-bottom border-primary text-center h-100">
                 <div class="card-body">
                   <h5 class="card-title"><span>Rozrod</span></h5>
                   <p class="card-text">
                     genealogická tabuľka potomkov jedného manželského páru,
-                    vrátane potomkov dcér
+                    vrátane potomkov dcér (po meči aj po praslici)
                   </p>
                 </div>
               </div>
@@ -700,8 +702,8 @@
         let menulang = stepitem.lang;
         if (menulang == "sk") {
           return `
-        <div classs="col">
-          <div class="card text-center shadow-lg m-4 ">
+        <div class="col mb-4">
+          <div class="card text-center shadow-lg h-100">
             <div class="card-header">${stepitem.head}</div>
               <div class="card-body ">
                 <h5 class="card-title text-primary">${stepitem.title}</h5>
@@ -819,6 +821,6 @@
       const menu_height = $("nav").outerHeight();
       $li_items.on("click", handle_nav_clicks);
     </script>
-    <p>ver:10.1.2021-16:46</p>
+    <p>ver:10.1.2021-21:17</p>
   </body>
 </html>
