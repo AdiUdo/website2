@@ -179,13 +179,16 @@ h5.card-title {
 
 
 /*  Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
- #custom .height-high {
-   height: 60vh;
- }
- #custom h1.display-4 {
-   font-size: calc(1rem + 2.7vw);
- }
+@media (max-width: 575.98px) {
+.text-smaller {
+  font-size: 0.7em;
+}
+  #custom .height-high {
+  height: 60vh;
+}
+#custom h1.display-4 {
+font-size: calc(1rem + 2.7vw);
+}
 #navbar-scroll .nav-link {
   font-size: 25px;
   font-weight: 700;
