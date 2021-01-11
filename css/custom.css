@@ -48,11 +48,11 @@ body {
 }
 
 #navbar-scroll .nav-link {
-  color: white;
+  color:var(--dark-col);
 }
 
 #navbar-scroll .nav-link.active {
-  color: var(--active-col);
+  color: var(--dark-col);
 }
 
 #navbar-scroll .nav-item {
@@ -60,6 +60,9 @@ body {
   color: white;
 }
 
+#custom .navbar-brand {
+  color: var(--dark-col);
+}
 
 #footer .nav-link {
   padding-left: 0;
@@ -183,7 +186,7 @@ h5.card-title {
 .text-smaller {
   font-size: 0.7em;
 }
-  #custom .height-high {
+#custom .height-high {
   height: 60vh;
 }
 #custom h1.display-4 {
@@ -192,6 +195,9 @@ font-size: calc(1rem + 2.7vw);
 #navbar-scroll .nav-link {
   font-size: 25px;
   font-weight: 700;
+}
+#navbar-scroll .nav-link.active {
+  color: var(--active-col);
 }
 .swiper-vysledky {
   position:relative;
