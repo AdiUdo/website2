@@ -68,6 +68,20 @@ body {
   padding-left: 0;
 }
 
+/*lang switch*/
+
+#langswitch .nav-link-lang {
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: none;
+
+}
+.div-lang {
+  position: absolute;
+  width: 60px;
+  bottom: 27px;
+}
+
 /* Tabs */
 
 
@@ -183,7 +197,12 @@ h5.card-title {
 
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-.text-smaller {
+.div-lang {
+  position: initial;
+  width: 100%;
+}
+
+  .text-smaller {
   font-size: 0.7em;
 }
 #custom .height-high {
