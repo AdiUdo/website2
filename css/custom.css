@@ -193,7 +193,14 @@ h5.card-title {
 
 /* Footer*/
 
+/* Iphone 5/SE ( less than 320px) 
 
+@media (max-width:321px) {
+  #custom .height-high {
+    height: 60vh;
+  }
+}
+*/
 
 /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -206,7 +213,7 @@ h5.card-title {
   font-size: 0.7em;
 }
 #custom .height-high {
-  height: 60vh;
+  height: 76vh;
 }
 #custom h1.display-4 {
 font-size: calc(1rem + 2.7vw);
