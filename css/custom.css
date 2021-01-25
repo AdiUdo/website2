@@ -30,7 +30,7 @@ body {
   color: white;
   background-image: url("https://raw.githubusercontent.com/AdiUdo/website2/master/img/hero-bck.jpg");
   background-blend-mode: multiply;
-  background-color: #666666;
+  background-color: #6666669c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,11 +48,11 @@ body {
 }
 
 #navbar-scroll .nav-link {
-  color: white;
+  color:var(--dark-col);
 }
 
 #navbar-scroll .nav-link.active {
-  color: var(--active-col);
+  color: var(--dark-col);
 }
 
 #navbar-scroll .nav-item {
@@ -60,9 +60,26 @@ body {
   color: white;
 }
 
+#custom .navbar-brand {
+  color: var(--dark-col);
+}
 
 #footer .nav-link {
   padding-left: 0;
+}
+
+/*lang switch*/
+
+#langswitch .nav-link-lang {
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: none;
+
+}
+.div-lang {
+  position: absolute;
+  width: 60px;
+  bottom: 27px;
 }
 
 /* Tabs */
@@ -94,18 +111,18 @@ h5.card-title {
   z-index: 100 !important;
 }
 
-#vysledky .card {
+#vzory .card {
   padding: 15px;
   width: 620px;
   height: 495px;
 }
 
-#vysledky img {
+#vzory img {
   position: relative;
   top: 70px;
 }
 
-#vysledky .card-text {
+#vzory .card-text {
   font-size: 1.1em;
   font-variant: all-petite-caps;
 }
@@ -145,12 +162,16 @@ h5.card-title {
   position:absolute;
   width: 730px;
   height: 600px;
-  top: 250px;
-  left: 50px;
+  top: -330px;
+  right: -400px;
 }
 
 .swiper-pagination-bullet {
   background-color: var(--active-col)!important;
+}
+
+#vzory .row {
+  max-height: 15px;
 }
 
 /* Media queries */
@@ -172,19 +193,37 @@ h5.card-title {
 
 /* Footer*/
 
+/* Iphone 5/SE ( less than 320px) 
 
+@media (max-width:321px) {
+  #custom .height-high {
+    height: 60vh;
+  }
+}
+*/
 
 /*  Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
- #custom .jumbotron {
-   height: 60vh;
- }
- #custom h1.display-4 {
-   font-size: calc(1rem + 2.7vw);
- }
+@media (max-width: 575.98px) {
+.div-lang {
+  position: initial;
+  width: 100%;
+}
+
+  .text-smaller {
+  font-size: 0.7em;
+}
+#custom .height-high {
+  height: 76vh;
+}
+#custom h1.display-4 {
+font-size: calc(1rem + 2.7vw);
+}
 #navbar-scroll .nav-link {
   font-size: 25px;
   font-weight: 700;
+}
+#navbar-scroll .nav-link.active {
+  color: var(--active-col);
 }
 .swiper-vysledky {
   position:relative;
@@ -193,23 +232,26 @@ h5.card-title {
   top:0px;
   left:0px;
 }
-#vysledky .card {
+#vzory .card {
   padding: 10px;
   width: 320px;
   height: 340px;
 }
 
-#vysledky img {
+#vzory img {
   position: relative;
   top: 70px;
 }
 
-#vysledky .card-text {
+#vzory .card-text {
   font-size: 0.7em;
   font-variant: all-petite-caps;
 }
-#vysledky .card-img-overlay {
+#vzory .card-img-overlay {
   padding: 0.5rem;
+}
+#vzory .row {
+  max-height: 175px;
 }
 }
 
@@ -231,12 +273,68 @@ h5.card-title {
   #footer hr {
     margin: 0.1rem 0.1rem;
   }
+  .swiper-vysledky {
+    position:relative;
+    width: 345px;
+    height: 345px;
+    top:0px;
+    left:0px;
+  }
+  #vzory .card {
+    padding: 10px;
+    width: 320px;
+    height: 340px;
+  }
+  
+  #vzory img {
+    position: relative;
+    top: 70px;
+  }
+  
+  #vzory .card-text {
+    font-size: 0.7em;
+    font-variant: all-petite-caps;
+  }
+  #vzory .card-img-overlay {
+    padding: 0.5rem;
+  }
+  #vzory .row {
+    max-height: 175px;
+  }
  }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #custom .jumbotron {
     height: 60vh;
+  }
+  .swiper-vysledky {
+    position:relative;
+    width: 545px;
+    height: 545px;
+    top:0px;
+    left:0px;
+  }
+  #vzory .card {
+    padding: 10px;
+    width: 520px;
+    height: 540px;
+  }
+  
+  #vzory img {
+    position: relative;
+    top: 70px;
+  }
+  
+  #vzory .card-text {
+    font-size: 0.7em;
+    font-variant: all-petite-caps;
+  }
+  #vzory .card-img-overlay {
+    padding: 0.5rem;
+  }
+  #vzory .row {
+    max-height: 625px;
   } 
  }
 
@@ -271,14 +369,10 @@ h5.card-title {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  #custom .jumbotron {
+  #custom .height-high {
     min-height: 60vh;
-  } 
-  #ethics .jumbotron {
-    min-height: 30vh;
-  } 
  }
-
+}
 
 
 
